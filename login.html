@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>2605超级牛逼宿舍登录页面</title>
+		<link rel="stylesheet" href="css/login.css" /> 
+	</head>
+	<body>
+		<div class="main">
+			<h1 id="headtitle">2605超级牛逼宿舍</h1>
+			<div id="tabs">
+					<ul>
+						<li><a href="#" class="register" onclick="loginOrRegister(1)">用户登录</a></li>
+						<li><a href="#" class="login" onclick="loginOrRegister(2)">用户注册</a></li>
+					</ul>
+			</div>
+			<div id="login">
+				<form>
+					<table>
+						<caption class="logHead">登录界面</caption>
+						<tr><td>用户名:</td><td><input id="login_user" required="required" type="text" onkeyup="getName(this.value)"/></td></tr>
+						<tr><td>密码:</td><td><input id="login_pwd"  required="required" type="password" onkeyup="getPwd(this.value)"/></td></tr>
+						<tr><td></td><td><input type="button" class="btn1" value="登录" onclick="showtabs()"/><input type="button" class="btn2" value="取消" onclick="cancel()"/></td></tr>
+					</table>
+				</form>
+				<p id="errtaps" style="font-size: small;color: red;"></p>
+			</div>
+			<div id="register">
+				<form>
+					<table>
+						<caption class="reHead">注册界面</caption>
+						<tr><td>用户名:</td><td><input type="text" required="required" onkeyup="getName(this.value)"/></td></tr>
+						<tr><td>邮箱:</td><td><input type="email" required="required" onkeyup="getEmail(this.value)" /></td></tr>
+						<tr><td>登录密码:</td><td><input type="password" required="required" onkeyup="getPwd(this.value)"/></td></tr>
+						<tr><td>确认密码:</td><td><input type="password" required="required" onkeyup="getCPwd(this.value)"/></td></tr>
+						<tr><td></td><td><input type="button" class="btn1" value="确定" onclick="regis()"/><input type="button" class="btn2" value="取消" onclick="cancel()"/></td></tr>
+					</table>
+				</form>
+				<p id="errtaps2" style="font-size: small;color: red;"></p>
+			</div>
+			<div id="goto">
+				3秒后自动跳转到主页，若是没有跳转，请点击链接:
+				<a href="main.html">2605超级牛逼宿舍主页</a>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="js/loginOrRegister.js" ></script>
+	</body>
+</html>

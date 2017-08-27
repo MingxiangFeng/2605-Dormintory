@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/new_file.css" />
+	</head>
+
+	<body>
+		<div class="main">
+			<div class="head">
+				<div class="headtitle">
+					<h1>2605超级牛逼宿舍</h1>
+				</div>
+				
+				<div class="headlink">
+					<ul>
+						<li>
+							<a href="index.html">成员信息</a>
+						</li>
+						<li class="linkBreak">|</li>
+						<li>
+							<a id="show" href="show.html">个人展示</a>
+						</li>
+						<li class="linkBreak">|</li>
+						<li>
+							<a href="activity.html">活动总览</a>
+						</li>
+						<li class="linkBreak">|</li>
+						<li>
+							<a href="contribute.html">世界贡献</a>
+						</li>
+						<li class="linkBreak">|</li>
+						<li>
+							<a href="award.html">得奖情况</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="middmain">
+				<div class="middmainleft">
+					<div class="middmainlefttop">
+						<h2>宿舍简介</h2>
+						<p>该牛逼宿舍成立于2014年8月30号，6位大神一直为该宿舍的辉煌历史而勤奋拼搏，鞠躬尽瘁死而后已，还好现在都活蹦乱跳，开心得一匹。请牢记他们的名字：
+							<a href="index.html">李文文</a>，
+							<a href="index.html">冯明明</a>，
+							<a href="index.html">王哲哲</a>，
+							<a href="index.html">朱敏敏</a>，
+							<a href="index.html">贾浩浩</a>，
+							<a href="index.html">曹辉辉</a>。 铭记历史，铭记2605超级牛逼宿舍。因为他们，世界才变得如此美好。
+						</p>
+					</div>
+					<div class="middmainleftbottom">
+						<h2>宿舍图片</h2>
+						<div id="2605images"><img id="images" /></div>
+						<input id="buttonUp" type="button" value="上一张" onclick="imagesUp()" />
+						<input id="buttonDown" type="button" value="下一张" onclick="imagesDown()" />
+					</div>
+				</div>
+				<div class="middmainright">
+					<div class="show">
+						<div class="nav">
+							<div class="navTop">
+								<ul>
+									<li class="showName">
+										<a href="#" onclick="showWho(0)">李文文</a>
+									</li>
+									<li class="showName">
+										<a href="#" onclick="showWho(1)">冯明明</a>
+									</li>
+									<li class="showName">
+										<a href="#" onclick="showWho(2)">王哲哲</a>
+									</li>
+									<li class="showName">
+										<a href="#" onclick="showWho(3)">朱敏敏</a>
+									</li>
+									<li class="showName">
+										<a href="#" onclick="showWho(4)">贾浩浩</a>
+									</li>
+									<li class="showName">
+										<a href="#" onclick="showWho(5)">曹辉辉</a>
+									</li>
+								</ul>
+							</div>
+							<div class="navBottom">
+								<font>选择某一项以查看：</font>
+								<ul>
+									<li class="showMes">
+										<a href="#" onclick="showself(0)">简历</a>
+									</li>
+									<li class="showMes">
+										<a href="#" onclick="showstory(1)">故事</a>
+									</li>
+									<li class="showMes">
+										<a href="#" onclick="showphoto(2)">图库</a>
+									</li>
+									<li class="showMes">
+										<a href="#" onclick="showach(3)">成就</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="showMain">
+							<div class="showSelf" id="showSelf">
+								<img id="imgSelf" />
+								<a id="hrefSelf" href="#" target="_blank">下载他的简历</a>
+							</div>
+							<div class="showStory" id="showStory">
+								<div class="artControl">
+									<font>选择他的文章以查看：</font>
+									<input type="button" onclick="goToThis()" value="查看" />
+								</div>
+								<div class="showAtricle">
+									<iframe id="articleIframe" src=""></iframe>
+								</div>
+							</div>
+							<div class="showPhoto" id="showPhoto">
+								<div class="showButton">
+									<button class="relax" onclick="watch(1)">休闲</button>
+									<button class="study" onclick="watch(2)">学习</button>
+									<button class="sport" onclick="watch(3)">腱子肉</button>
+									<button class="gloup" onclick="watch(4)">群体生活</button>
+								</div>
+								<!--<div class="photoDisplay"></div>-->
+							</div>
+							<div class="showAch" id="showAch">
+								<h1>His Award</h1>
+								<div class="bigAch"></div>
+								<div class="awardInt">获奖介绍（从上到下）：</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="bottom">
+				<p>
+					<a href="#" onclick="about()">关于作者</a> |
+					<a href="#" onclick="update()">最近更新</a> |
+					<a href="#" onclick="sponsor()">赞助作者</a> |
+					<a href="#" onclick="leave()">留言我们</a>
+				</p>
+				<p id="date"></p>
+			</div>
+			<div class="leaveDiv">
+				<div class="headLeaveDiv">
+					<p>留言我们</p>
+					<button id="closeLeaveDiv">x</button>
+				</div>
+				<div class="leaveList">
+					<ul>
+						<li>
+							<a id="bug" href="#">Bug反馈</a>
+						</li>
+						<li>
+							<a id="comunity" href="#">大家来说</a>
+						</li>
+					</ul>
+				</div>
+				<div class="Bugfeedback">
+					<form>
+						<p>尊敬的用户：</p>
+						<textarea class="textarea" type="text" placeholder="在这里填写您遇到的Bug..."></textarea>
+						<font>上传遇到的Bug截图或文件<input class="submitPhoto" type="file" /></font>
+						<input class="submitInput" type="submit" value="提交" />
+					</form>
+				</div>
+				<div class="Community">
+					<form action="php/upchat.php" method="get">
+						<div class="statement">
+							<h4 class="host">1楼：</h4>
+							<p class="speech">我是世界最无敌的存在，你有本事来咬我啊！</p>
+							<h4 class="host">2楼：</h4>
+							<p class="speech">1楼绝对是个煞笔。</p>
+							<h4 class="host">3楼：</h4>
+							<p class="speech">我觉得1楼应该去嗑药。</p>
+							<h4 class="host">4楼：</h4>
+							<p class="speech">1楼，天台见！</p>
+							<h4 class="host">5楼：</h4>
+							<p class="speech">1楼，放学别走，拐过小卖部第二条小巷等着你。</p>
+							<h4 class="host">6楼：</h4>
+							<p class="speech">1楼，你妈叫你回家吃饭了。</p>
+						</div>
+						<p style="margin-left:16px;">你现在的位置：
+							<font id="You"></font>
+						</p>
+						<!--<form action="php/upchat.php" method="get">-->
+						<textarea class="textarea2" name="content" placeholder="在这里输入你想发表的内容..." type="text"></textarea>
+						<input class="submitInput2" type="submit" value="发表" />
+					</form>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/new_file.js"></script>
+		<script type="text/javascript" src="js/loginOrRegister.js"></script>
+	</body>
+
+</html>
