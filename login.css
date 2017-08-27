@@ -1,0 +1,91 @@
+/******************************登录注册界面*****************************/
+.main{
+	width: 1000px;
+	height: 860px;
+	margin: auto;
+	background-image:url(../img/2605dormintory.jpg);
+	background-size: 100% 100%;
+}
+#headtitle{
+	color: whitesmoke;
+	font-family: "edwardian script itc";
+	padding: 400px 0px 0px 30px;
+}
+#tabs{
+	 margin: -40px 0px 0px 310px;
+	 color: white;
+}
+#tabs li{
+	list-style: none;
+	float: left;
+	margin-right: 20px;
+}
+#tabs li a{
+	color: white;
+}
+#tabs li a:hover{
+	color: blue;
+}
+
+#login,#register {
+	width: 320px;
+	height:215px;
+	border: 2px solid black;
+	border-radius: 5px;
+	background-color: #C0C0C0;
+	z-index: 1000;
+	margin:80px 0px 0px 170px;
+	display: none;
+}
+#login{
+	display: block;
+}
+.reHead,.logHead{
+	width: 320px;
+	height: 25px;
+	border-bottom: 1px solid green;
+	background-color:green;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+#login table,#register table{
+	vertical-align: middle;
+}
+#login td,#register td{
+	font-size: large;
+}
+#login input,#register input{
+	height: 23px;
+}
+.btn1{
+	border: 1px solid black;
+	border-radius: 3px;
+	width: 40px;
+	margin-right: 40px;
+	background-color: #87CEEB;
+}
+.btn2{
+	border: 1px solid black;
+	border-radius: 3px;
+	width: 40px;
+	background-color: #87CEEB;
+}
+.btn1:hover{
+	background-color: greenyellow;
+}
+.btn2:hover{
+	background-color: red;
+}
+#goto{
+	position: absolute;
+	left: 298px;
+	top: 500px;
+	border: 2px solid black;
+	border-radius: 5px;
+	width: 320px;
+	height:215px;
+	display: none;
+	z-index: 1000;
+	background-color: #CCCCCC;
+}
+/***************************************************************/
